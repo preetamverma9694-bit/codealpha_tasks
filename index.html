@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Gallery</h1>
+        <!-- Bonus: Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Image Gallery Grid Layout -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos" alt="Forest Trail">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos" alt="City Mist">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos" alt="Forest Woods">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos" alt="City Street">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos" alt="Mountain Lake">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos" alt="Urban Buildings">
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Pop-up Component -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Popup view">
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
